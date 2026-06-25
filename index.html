@@ -284,6 +284,35 @@ The interface also allows exporting the current view in multiple formats for rep
         </p>
         <a class="btn" href="https://efslio94unarjs6njr4ckd.streamlit.app/" target="_blank">Launch</a>
          </div>
+
+     <div class="card"> 
+        <h3> Data Recovery Taxonomy & Framework </h3>
+        <p>
+         The Data Recovery Taxonomy & Framework gives the Enterprise Recovery Orchestrator app its underlying vocabulary and process model. 
+         The taxonomy classifies every recovery record along four simultaneous axes — Recovery Domain (Disk, Database, Cloud, Email, Cyber Artifact), 
+         Outcome (Recovered/Partial/Failed), Confidence Band (High/Medium/Low), and Tooling — so any record can be described precisely regardless of 
+         what kind of system it came from. The framework, called KDRF, lays out the five-phase process every case moves through: Identify & Triage, 
+         Acquire & Preserve, Analyze, Recover & Reconstruct, and Validate, Score & Report. 
+         A cross-cutting Decision Layer runs across the final three phases, acting as an "Agentic AI Recovery Advisor" that turns analyzer output into 
+         a confidence score, recovery plan, time estimate, and tool recommendation. Five formulas quantify the whole thing — Recovery Probability, Confidence 
+         Level, Estimated Time, record-level confidence bands, and domain-weighted success rates — making the taxonomy and framework not just descriptive 
+         but computable.
+        </p>
+        <a class="btn" href="https://cqs27asdolpkevore75tnr.streamlit.app/" target="_blank">Launch</a>
+         </div>
+
+    <div class="card"> 
+        <h3> Enterprise Recovery Orchestrator </h3>
+        <p>
+         The Enterprise Recovery Orchestrator is a Streamlit app that simulates recovery operations across five domains — Disk, Database, Cloud, Email, 
+         and Cyber Artifact Recovery — by generating synthetic telemetry records with randomized status, confidence score, size, and tool used, weighted 
+         per domain. It persists every run and its individual records to a local SQLite database (`knet_recovery.db`), enabling a History tab that lists 
+         past runs and can clear them. A rule-based "Agentic AI Recovery Advisor" (`compute_ai_recommendation()`) turns the generated records into a Recovery
+         Probability, Confidence rating, Estimated Time, and a prioritized list of suggested actions and tools, explicitly designed as a stand-in for a future 
+        live LLM call. Results are visualized via Plotly (pie, stacked bar, histogram) with a native-chart fallback, and the Export tab offers CSV, JSON, TXT, PDF, and DOCX downloads, with PDF/DOCX gated behind `reportlab`/`python-docx` availability checks. Overall it's the operational simulation engine that pairs with the Taxonomy & Framework app: this one runs and scores synthetic recoveries, the other documents the vocabulary and math behind them.
+        </p>
+        <a class="btn" href="https://jvde3khp6usnowuun5jhgf.streamlit.app/" target="_blank">Launch</a>
+         </div>
     
 </div>
 
